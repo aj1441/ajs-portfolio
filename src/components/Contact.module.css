@@ -1,0 +1,121 @@
+.contact {
+    padding: 80px 0;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--accent-purple);
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-red);
+  }
+  
+  .contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  
+  .contactInfo h3 {
+    font-size: 1.8rem;
+    color: var(--accent-red);
+    margin-bottom: 20px;
+  }
+  
+  .contactInfo p {
+    margin-bottom: 30px;
+    color: rgba(248, 248, 255, 0.8);
+  }
+  
+  .contactMethods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contactMethod {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .methodIcon {
+    font-size: 1.2rem;
+  }
+  
+  .contactForm {
+    background-color: rgba(20, 20, 30, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(108, 77, 255, 0.1);
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent-blue);
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(10, 10, 15, 0.8);
+    border: 1px solid rgba(108, 77, 255, 0.3);
+    border-radius: 5px;
+    color: var(--text-light);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent-purple);
+  }
+  
+  .submitButton {
+    background-color: var(--accent-purple);
+    color: var(--text-light);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--accent-red);
+  }
+  
+  @media (max-width: 768px) {
+    .contactContent {
+      grid-template-columns: 1fr;
+    }
+  
+    .contactInfo {
+      order: 2;
+    }
+  
+    .contactForm {
+      order: 1;
+    }
+  }
+  
+  

@@ -1,0 +1,107 @@
+.header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(5px);
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-red);
+    font-family: "Brush Script MT", cursive;
+    margin-bottom: 5px;
+  }
+  .inlineLogo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2em;
+    margin: 0 0.4rem;
+    filter: drop-shadow(0 0 6px var(--accent));
+  }
+  
+  .codeTag {
+    font-family: "Courier New", monospace;
+    font-size: 1.8rem;
+    color: var(--accent-purple);
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    letter-spacing: 1px;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav ul li {
+    margin-left: 30px;
+  }
+  
+  .nav ul li a {
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: var(--accent-purple);
+  }
+  
+  .mobileMenuButton {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+  
+  .mobileMenuButton span {
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-light);
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .mobileMenuButton {
+      display: flex;
+    }
+  
+    .nav {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      width: 70%;
+      height: calc(100vh - 80px);
+      background-color: var(--background-dark);
+      transition: right 0.3s ease;
+      padding: 20px;
+    }
+  
+    .nav.open {
+      right: 0;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+    }
+  
+    .nav ul li {
+      margin: 15px 0;
+    }
+  }
+  
+  
