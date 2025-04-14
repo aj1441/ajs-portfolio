@@ -61,6 +61,15 @@
     color: var(--text-light);
     margin-bottom: 10px;
   }
+
+  .projectCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    max-height: 200px; /* Adjust as needed to fit within the parent */
+  }
   
   .projectCard p {
     color: rgba(248, 248, 255, 0.8);
