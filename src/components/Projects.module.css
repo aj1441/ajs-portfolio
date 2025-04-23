@@ -1,5 +1,8 @@
 .projects {
-    padding: 80px 0;
+    padding: 10rem 0;
+    scroll-margin-top: 15rem;
+    justify-items: center; /* Centers items horizontally */
+    align-items: start; /* Aligns items vertically at the top */
   }
   
   .projects h2 {
@@ -23,8 +26,9 @@
   
   .projectGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     gap: 30px;
+   
   }
   
   .projectCard {

@@ -18,19 +18,19 @@ const Header = () => {
           <div className={styles.logo}>
             <h1 className={styles.heroHeading}>
               AJ{" "}
-              <img
-                src={logo}
-                alt="Circuit Flame Logo"
-                className={styles.inlineLogo}
-              />
+            
               {" "}
               SMITH
             </h1>
             <p className={styles.tagline}>
-              Developer * Marketer * Entrepreneur * Cybersecurity Advocate
+              Developer * Leader * Marketer * Entrepreneur * Cybersecurity Advocate
             </p>
           </div>
-
+          <img
+                src={logo}
+                alt="Circuit Flame Logo"
+                className={styles.inlineLogo}
+              />
           <div className={styles.mobileMenuButton} onClick={toggleMenu}>
             <span></span>
             <span></span>

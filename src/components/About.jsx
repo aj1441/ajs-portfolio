@@ -1,4 +1,8 @@
 import styles from "./About.module.css"
+import SkillCard from "../components/SkillCard"
+import skills from "../data/logos" // Adjust the path as necessary
+// src/data/logos.jsx
+
 
 const About = () => {
   return (
@@ -11,20 +15,9 @@ const About = () => {
             just code, but strategies and experiences that engage, protect, and INSPIRE!
           </p>
           <p>
-            With a passion for creating innovative solutions, I combine technical expertise with marketing insights to
-            deliver projects that make a real impact. My background in cybersecurity ensures that protection is built
-            into everything I create.
+          Bringing over a decade of cross-functional experience in administration, supply chain logistics, program oversight, and marketing, I began formally pivoting into the tech space in 2018. My interest in cybersecurity and digital privacy stems from firsthand encounters, motivating me to stay deeply engaged with evolving best practices. I'm consistently expanding my knowledge of AI integration for task automation, security enhancement, and data-driven decision-making. As someone who understands both operational complexity and technical growth, I offer a unique perspective and dependable versatility to any development team.
           </p>
           <div className={styles.skills}>
-            <div className={styles.skillCategory}>
-              <h3>Development</h3>
-              <ul>
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>Python</li>
-              </ul>
-            </div>
             <div className={styles.skillCategory}>
               <h3>Marketing</h3>
               <ul>
@@ -43,7 +36,22 @@ const About = () => {
                 <li>Client Relations</li>
               </ul>
             </div>
+           
           </div>
+          <div className={styles.skillIconCategory}>
+              <h3>Development</h3>
+              <ul className={styles.skillIcons}>
+              {skills.map((skill, index) => (
+              <SkillCard
+                key={index}
+                title={skill.title}
+                image={skill.image}
+                alt={skill.alt}
+                className={skill.title === "Express.JS" ? styles.lightBackground : ""}
+              />
+            ))}
+              </ul>
+            </div>
         </div>
       </div>
     </section>
