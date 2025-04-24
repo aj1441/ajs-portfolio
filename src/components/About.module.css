@@ -64,6 +64,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;;
   }
   
   .skillCategory ul li {
@@ -79,6 +80,7 @@
     left: 0;
   }
   .skillIconCategory {
+    margin-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -86,6 +88,12 @@
     gap: 1rem;
     /* justify-content: center;
     align-items: center; */
+  }
+  .skillIconCategory h3 {
+    color: var(--accent-red);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
   }
   .skillIcons {
     display: flex;
