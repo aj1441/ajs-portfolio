@@ -114,7 +114,6 @@ const Contact = () => {
               </div>
             )}
           </div>
-          <input type="hidden" name="_origin" value="https://aj1441.github.io/ajs-portfolio/"></input>
           <button
             type="submit"
             className={styles.submitButton}
