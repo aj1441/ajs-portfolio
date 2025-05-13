@@ -23,7 +23,7 @@ const Header = () => {
               SMITH
             </h1>
             <p className={styles.tagline}>
-              Developer * Leader * Marketer * Entrepreneur * Cybersecurity Advocate
+              Developer * Leader * Marketer * Cybersecurity Advocate
             </p>
           </div>
           <img

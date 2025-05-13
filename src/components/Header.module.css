@@ -111,7 +111,7 @@
 
   @media (min-width: 768px) {
     .inlineLogo {
-      width: 10rem;
+      width: 9rem;
       height: auto;
       margin: 0 0.4rem;
     }
@@ -120,7 +120,7 @@
   
   @media (min-width: 998px) {
     .inlineLogo {
-      width: 15rem;
+      width: 10rem;
       height: auto;
       margin: 0 0.4rem;
     }
