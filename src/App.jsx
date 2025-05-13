@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import About from "./components/About"
+import SkillCard from "./components/SkillCard"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import { useCallback } from "react";
@@ -16,7 +17,7 @@ function App() {
   }, []);
 
   const keywords = [
-    "Resourceful", "Perceptive", "Driven", "Creative", "Agile", "Strategic", "Innovative", "Curious", "Tenacious", "Focused", "Inventive", "Collaborative",
+    "Resourceful", "Perceptive", "Driven", "Creative", "Relentless", "Agile", "Strategic", "Innovative", "Curious", "Tenacious", "Focused", "Inventive", "Collaborative",
   ];
 
   function getEdgeBiasedPosition() {
@@ -95,6 +96,7 @@ function App() {
       <main className="container">
       {/* <Hero /> */}
         <About />
+        <SkillCard />
         <Projects />
         <Contact />
       </main>

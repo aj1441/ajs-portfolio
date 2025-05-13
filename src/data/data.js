@@ -21,19 +21,19 @@ const projectData = [
       link: "https://youtu.be/sR8jJ10IKKQ",
     },
     {
-      title: "Horoscopes",
-      image: "./assets/horoscope-page.png",
+      title: "Celestial Insights",
+      image: "./assets/celestial-insights.png",
       description:
         "Built a responsive web page with HTML, CSS, and JavaScript that enables users to select their sun sign and view a personalized horoscope. Designed for seamless integration with a horoscope REST API. ",
-      link: "https://aj1441.github.io/horoscopes/",
+      link: "https://aj-celestial-insights.netlify.app/",
     },
-    {
-        title: "Cannons Coffee",
-        image: "./img/portfolio-coffee.png",
-        description:
-          "Cannons Coffee was my first major project. Starting with images of the site at large and medium dimensions, I coded the HTML and CSS required to create two pages, using CSS Grid for layouts. Later, as I learned JavaScript, I added a hamburger menu for mobile dimensions.",
-        link: "https://aj1441.github.io/cannons-coffee/",
-      },
+    // {
+    //     title: "Cannons Coffee",
+    //     image: "./img/portfolio-coffee.png",
+    //     description:
+    //       "Cannons Coffee was my first major project. Starting with images of the site at large and medium dimensions, I coded the HTML and CSS required to create two pages, using CSS Grid for layouts. Later, as I learned JavaScript, I added a hamburger menu for mobile dimensions.",
+    //     link: "https://aj1441.github.io/cannons-coffee/",
+    //   },
   ];
   export default projectData;
   

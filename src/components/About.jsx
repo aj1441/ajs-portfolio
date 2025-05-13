@@ -1,8 +1,7 @@
-import styles from "./About.module.css"
-import SkillCard from "../components/SkillCard"
-import skills from "../data/logos" // Adjust the path as necessary
+import styles from "./About.module.css";
+import SkillCard from "../components/SkillCard";
+import skills from "../data/logos"; // Adjust the path as necessary
 // src/data/logos.jsx
-
 
 const About = () => {
   return (
@@ -11,11 +10,28 @@ const About = () => {
         <div className={styles.aboutText}>
           <h2>About Me</h2>
           <p className={styles.highlight}>
-            Software development, marketing, AI, and project leadership are my tools for transformation. I build not
-            just code, but strategies and experiences that engage, protect, and INSPIRE!
+            Software development, marketing, AI, and project leadership are my
+            tools for transformation. I build not just code, but strategies and
+            experiences that engage, protect, and INSPIRE!
           </p>
           <p>
-          Bringing over a decade of cross-functional experience in administration, supply chain logistics, program oversight, and marketing, I began formally pivoting into the tech space in 2018. My interest in cybersecurity and digital privacy stems from firsthand encounters, motivating me to stay deeply engaged with evolving best practices. I'm consistently expanding my knowledge of AI integration for task automation, security enhancement, and data-driven decision-making. As someone who understands both operational complexity and technical growth, I offer a unique perspective and dependable versatility to any development team.
+            Bringing over a decade of cross-functional experience in
+            administration, supply chain logistics, program oversight, and
+            marketing, I began formally pivoting into the tech space in 2018. My
+            passion for cybersecurity and digital privacy stems from firsthand
+            experience, fueling a deep commitment to staying at the forefront of
+            evolving technologies.
+          </p>
+          <br />
+          <p>
+            I don't just solve problems — I create new possibilities. With sharp
+            foresight, multidimensional experience, and a relentless drive, I
+            chart paths where others see roadblocks. My strategic,
+            unconventional approach allows me to anticipate challenges, design
+            bold solutions, and drive lasting impact. Bridging operational
+            complexity with technical innovation, I bring a decisive,
+            future-focused mindset and dependable execution to every development
+            team I join.
           </p>
           <div className={styles.skills}>
             <div className={styles.skillCategory}>
@@ -36,27 +52,11 @@ const About = () => {
                 <li>Client Relations</li>
               </ul>
             </div>
-           
           </div>
-          <div className={styles.skillIconCategory}>
-              <h3>Development</h3>
-              <ul className={styles.skillIcons}>
-              {skills.map((skill, index) => (
-              <SkillCard
-                key={index}
-                title={skill.title}
-                image={skill.image}
-                alt={skill.alt}
-                className={skill.title === "Express.JS" ? styles.lightBackground : ""}
-              />
-            ))}
-              </ul>
-            </div>
         </div>
-      </div>
+        </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;
