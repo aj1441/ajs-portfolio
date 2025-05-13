@@ -22,7 +22,7 @@ const Projects = () => {
       title: "Tic Tac Toe",
       image: ticTacToe,
       description:
-        "Using JavaScript to create a Tic-Tac-Toe Game where the player plays against the computer.",
+        "Created from Figma Design to spec, for an interactive Tic-Tac-Toe Game for player vs CPU.",
       technologies: ["JavaScript", "Html", "CSS"],
       category: "Frontend Development",
       link: "https://aj1441.github.io/tic-tac-toe-against-cpu/",
@@ -40,7 +40,7 @@ const Projects = () => {
       id: 4,
       title: "Horoscopes",
       image: horoscope,
-      description: "AI powered responsive web page with HTML, CSS, and JavaScript that enables users to select their sun sign and view a personalized horoscope. Designed for seamless integration with a horoscope REST API. ",
+      description: "AI powered responsive web page with HTML, CSS, and JavaScript, RestAPI that enables users to select their sun sign and view a personalized horoscope.",
       technologies: ["HTML", "CSS", "JavaScript", "ChatGPT"],
       category: "Frontend Development",
       link: "https://aj-celestial-insights.netlify.app/",
