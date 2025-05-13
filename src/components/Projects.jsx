@@ -43,7 +43,7 @@ const Projects = () => {
       description: "AI powered responsive web page with HTML, CSS, and JavaScript that enables users to select their sun sign and view a personalized horoscope. Designed for seamless integration with a horoscope REST API. ",
       technologies: ["HTML", "CSS", "JavaScript", "ChatGPT"],
       category: "Frontend Development",
-      link: "https://aj1441.github.io/horoscopes/",
+      link: "https://aj-celestial-insights.netlify.app/",
     },
     
   ];
