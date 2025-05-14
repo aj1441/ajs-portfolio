@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   const keywords = [
-    "Resourceful", "Perceptive", "Driven", "Creative", "Relentless", "Agile", "Strategic", "Innovative", "Curious", "Tenacious", "Focused", "Inventive", "Collaborative",
+    "Resourceful", "Perceptive", "Driven", "Creative", "Relentless", "Agile", "Strategic", "Innovative", "Curious", "Tenacious", "Collaborative",
   ];
 
   function getEdgeBiasedPosition() {
@@ -85,6 +85,10 @@ function App() {
     detectRetina: true,
     particles: {
       number: { value: 0 }, // no default particles
+      collisions: {
+      enable: true,
+      mode: "bounce",
+    },
     },
     manualParticles,
   };

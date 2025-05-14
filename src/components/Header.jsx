@@ -16,28 +16,36 @@ const Header = () => {
       <div className="container">
         <div className={styles.headerContent}>
           <div className={styles.logo}>
-            <h1 className={styles.heroHeading}>
-              AJ{" "}
-            
-              {" "}
-              SMITH
-            </h1>
+            <h1 className={styles.heroHeading}>AJ SMITH</h1>
             <p className={styles.tagline}>
               Developer * Leader * Marketer * Cybersecurity Advocate
             </p>
           </div>
           <img
-                src={logo}
-                alt="Circuit Flame Logo"
-                className={styles.inlineLogo}
-              />
-          <div className={styles.mobileMenuButton} onClick={toggleMenu}>
+            src={logo}
+            alt="Circuit Flame Logo"
+            className={styles.inlineLogo}
+          />
+          <div
+            className={`${styles.mobileMenuButton} ${
+              menuOpen ? styles.open : ""
+            }`}
+            onClick={toggleMenu}
+          >
             <span></span>
             <span></span>
             <span></span>
           </div>
 
           <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+            <button
+              className={styles.closeButton}
+              onClick={() => setMenuOpen(false)}
+              aria-label="Close navigation"
+              type="button"
+            >
+              &times;
+            </button>
             <ul>
               <li>
                 <a href="#about" onClick={() => setMenuOpen(false)}>

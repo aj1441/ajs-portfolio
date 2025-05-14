@@ -2,20 +2,30 @@ import styles from "./Projects.module.css";
 import ticTacToe from '../assets/tic-tac-toe.png';
 import horoscope from '../assets/newHoroscopePage.png';
 import focusFox from '../assets/focus-fox.png';
-import countriesApi from '../assets/countries-api.png';
-
+// import countriesApi from '../assets/countries-api.png';
+import productApp from '../assets/product_mng_app.png'
 
 const Projects = () => {
   const projects = [
-    {
+    // {
+    //   id: 1,
+    //   title: "Countries API App",
+    //   image: countriesApi,
+    //   description:
+    //     "A responsive web app that allows users to search for countries and view their details using a REST API.",
+    //   technologies: ["React", "Node.js", "PostgreSQL", "Netlify", "Render"],
+    //   category: "Full-stack Development",
+    //   link: "https://countriesapiversion5.netlify.app/",
+    // },
+        {
       id: 1,
-      title: "Countries API App",
-      image: countriesApi,
+      title: "Product Management App",
+      image: productApp,
       description:
-        "A responsive web app that allows users to search for countries and view their details using a REST API.",
+        "This App allows users to view and submit feed back on a current product, with user-centered responsive design.",
       technologies: ["React", "Node.js", "PostgreSQL", "Netlify", "Render"],
       category: "Full-stack Development",
-      link: "https://countriesapiversion5.netlify.app/",
+      link: "https://aj-product-management-app.netlify.app/",
     },
     {
       id: 2,
