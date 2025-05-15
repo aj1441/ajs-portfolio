@@ -64,7 +64,7 @@ function App() {
       },
       move: {
         enable: true,
-        speed: Math.random() * 2 + 1.5, // Speed between 1.5 and 3.5
+        speed: Math.random() * 2 + 1, // Speed between 1.5 and 3.5
         direction: "none",
         outModes: {
           default: "bounce",

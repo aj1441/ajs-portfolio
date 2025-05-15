@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -16,10 +16,27 @@ const Contact = () => {
 
   const [state, handleSubmit, reset] = useForm(formId);
 
-  if (state.submitting) {
-    return <p>Submitting…</p>;
-  }
+    // Clear form fields when reset is called
+  const handleReset = () => {
+    reset();
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
 
+
+  // Optionally, clear form automatically after successful submit
+  useEffect(() => {
+    if (state.succeeded) {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
+  }, [state.succeeded]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,8 +45,10 @@ const Contact = () => {
       [name]: value,
     });
   };
-
-
+  
+  if (state.submitting) {
+    return <p>Submitting…</p>;
+  }
 
   return (
     <section id="contact" className={styles.contact}>
@@ -108,7 +127,7 @@ const Contact = () => {
             {state.succeeded && (
               <div className={styles.successMessage}>
                 <p>Thanks for your message!</p>
-                <button onClick={reset} className={styles.resetButton} type="button">
+                <button onClick={handleReset} className={styles.resetButton} type="button">
                   Reset
                 </button>
               </div>

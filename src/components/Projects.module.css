@@ -2,6 +2,7 @@
     scroll-margin-top: 15rem;
     justify-items: center; /* Centers items horizontally */
     align-items: start; /* Aligns items vertically at the top */
+    margin-top: 3rem;
   }
   
   .projects h2 {

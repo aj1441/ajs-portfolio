@@ -1,6 +1,7 @@
 .about {
-    padding: 5rem 0;
+    padding: 1rem 0;
     scroll-margin-top: 40rem;
+    /* margin-bottom: 10rem; */
   }
   
   .aboutContent {
@@ -76,9 +77,23 @@
  
   
   @media (max-width: 768px) {
-    .skills {
-      flex-direction: column;
-    }
+     .skills {
+    /* flex-direction: row; */
+    /* align-items: stretch/; */
+    margin-top: 20px;
+  }
+
+  .skillCategory {
+    grid-template-columns: 1fr;
+    min-width: 0;
+    margin-bottom: 2rem;
+    justify-items: start;
+  }
+  
+  .skillCategory ul {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
   }
   
   
