@@ -41,7 +41,7 @@ const Projects = () => {
       id: 3,
       title: "Focus Fox",
       image: focusFox,
-      description: "A friendly AI-powered prodctivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
+      description: "A friendly AI-powered productivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
       technologies: ["React", "JavaScript", "CSS"],
       category: "Hackathon/Development",
       link: "https://youtu.be/sR8jJ10IKKQ",
