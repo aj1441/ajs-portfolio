@@ -3,7 +3,7 @@ import ticTacToe from '../assets/tic-tac-toe.png';
 import horoscope from '../assets/newHoroscopePage.png';
 import focusFox from '../assets/focus-fox.png';
 // import countriesApi from '../assets/countries-api.png';
-import productApp from '../assets/product_mng_app.png'
+import productApp from '../assets/product_mng_app.png';
 
 const Projects = () => {
   const projects = [
@@ -41,7 +41,7 @@ const Projects = () => {
       id: 3,
       title: "Focus Fox",
       image: focusFox,
-      description: "A friendly AI-powered prodctivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
+      description: "A friendly AI-powered productivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
       technologies: ["React", "JavaScript", "CSS"],
       category: "Hackathon/Development",
       link: "https://youtu.be/sR8jJ10IKKQ",

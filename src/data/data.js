@@ -1,23 +1,23 @@
 const projectData = [
     {
       title: "Countries API App",
-      image: "./assest/countries_api.png",
+      image: "./assets/countries-api.png",
       description:
         "A responsive web app that allows users to search for countries and view their details using a REST API.",
       link: "https://aj1441.github.io/countries-api-app/",
     },
     {
         title: "Tic Tac Toe",
-        image: "./asset/tic-tac-toe.png",
+        image: "./assets/tic-tac-toe.png",
         description:
           "Using JavaScript to create a Tic-Tac-Toe Game where the player plays against the computer.",
         link: "https://aj1441.github.io/tic-tac-toe-against-cpu/",
       },
     {
       title: "Focus Fox",
-      image: "./asset/focus-fox.png",
+      image: "./assets/focus-fox.png",
       description:
-        "A friendly AI-powered prodctivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
+        "A friendly AI-powered productivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
       link: "https://youtu.be/sR8jJ10IKKQ",
     },
     {
