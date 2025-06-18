@@ -3,7 +3,7 @@ import ticTacToe from '../assets/tic-tac-toe.png';
 import horoscope from '../assets/newHoroscopePage.png';
 import focusFox from '../assets/focus-fox.png';
 // import countriesApi from '../assets/countries-api.png';
-import productApp from '../assets/product_mng_app.png'
+import productApp from '../assets/product_mng_app.png';
 
 const Projects = () => {
   const projects = [
