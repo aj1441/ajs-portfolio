@@ -17,7 +17,7 @@ const projectData = [
       title: "Focus Fox",
       image: "./asset/focus-fox.png",
       description:
-        "A friendly AI-powered prodctivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
+        "A friendly AI-powered productivity tool that helps users stay focused and organized, created as part of a team for the Girl Develop It Hackathon. Awarded 'Crowd Favorite'",
       link: "https://youtu.be/sR8jJ10IKKQ",
     },
     {
